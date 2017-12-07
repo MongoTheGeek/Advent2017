@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC12F5B11FD7A43100A3839F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12F5B01FD7A43100A3839F /* main.swift */; };
+		DC5989421FD7A4C60093DD2B /* Useful.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB648A41FD1CFCD00CC25EC /* Useful.swift */; };
 		DCA4462E1FD108D0009A3B22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4462D1FD108D0009A3B22 /* main.swift */; };
 		DCA4463B1FD109B3009A3B22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4463A1FD109B3009A3B22 /* main.swift */; };
 		DCA70FF81FD4977400BF0EFD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA70FF71FD4977400BF0EFD /* main.swift */; };
@@ -19,6 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DC12F5AC1FD7A43100A3839F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		DCA446281FD108D0009A3B22 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +78,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC12F5AE1FD7A43100A3839F /* 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC12F5B01FD7A43100A3839F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DC5989441FD7A71B0093DD2B /* 1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "1-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCA4462A1FD108D0009A3B22 /* 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 1; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA4462D1FD108D0009A3B22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DCA446381FD109B3009A3B22 /* 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +97,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC12F5AB1FD7A43100A3839F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA446271FD108D0009A3B22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC12F5AF1FD7A43100A3839F /* 6 */ = {
+			isa = PBXGroup;
+			children = (
+				DC12F5B01FD7A43100A3839F /* main.swift */,
+			);
+			path = 6;
+			sourceTree = "<group>";
+		};
 		DCA446211FD108D0009A3B22 = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +159,9 @@
 				DCB27F2C1FD3BC5C006626D2 /* 3 */,
 				DCA70FF61FD4977400BF0EFD /* 4 */,
 				DCAA33B91FD725A10075C768 /* 5 */,
+				DC12F5AF1FD7A43100A3839F /* 6 */,
 				DCA4462B1FD108D0009A3B22 /* Products */,
+				DC5989441FD7A71B0093DD2B /* 1-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +173,7 @@
 				DCB27F2B1FD3BC5C006626D2 /* 3 */,
 				DCA70FF51FD4977400BF0EFD /* 4 */,
 				DCAA33B81FD725A00075C768 /* 5 */,
+				DC12F5AE1FD7A43100A3839F /* 6 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +223,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC12F5AD1FD7A43100A3839F /* 6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC12F5B41FD7A43100A3839F /* Build configuration list for PBXNativeTarget "6" */;
+			buildPhases = (
+				DC12F5AA1FD7A43100A3839F /* Sources */,
+				DC12F5AB1FD7A43100A3839F /* Frameworks */,
+				DC12F5AC1FD7A43100A3839F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 6;
+			productName = 6;
+			productReference = DC12F5AE1FD7A43100A3839F /* 6 */;
+			productType = "com.apple.product-type.tool";
+		};
 		DCA446291FD108D0009A3B22 /* 1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA446311FD108D0009A3B22 /* Build configuration list for PBXNativeTarget "1" */;
@@ -286,8 +335,13 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Livelys;
 				TargetAttributes = {
+					DC12F5AD1FD7A43100A3839F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					DCA446291FD108D0009A3B22 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					DCA446371FD109B3009A3B22 = {
@@ -325,11 +379,21 @@
 				DCB27F2A1FD3BC5C006626D2 /* 3 */,
 				DCA70FF41FD4977400BF0EFD /* 4 */,
 				DCAA33B71FD725A00075C768 /* 5 */,
+				DC12F5AD1FD7A43100A3839F /* 6 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC12F5AA1FD7A43100A3839F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC12F5B11FD7A43100A3839F /* main.swift in Sources */,
+				DC5989421FD7A4C60093DD2B /* Useful.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA446261FD108D0009A3B22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +441,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DC12F5B21FD7A43100A3839F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/1-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DC12F5B31FD7A43100A3839F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/1-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		DCA4462F1FD108D0009A3B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,6 +514,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -479,6 +564,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -486,8 +572,12 @@
 		DCA446321FD108D0009A3B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -495,8 +585,11 @@
 		DCA446331FD108D0009A3B22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "1-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -576,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC12F5B41FD7A43100A3839F /* Build configuration list for PBXNativeTarget "6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC12F5B21FD7A43100A3839F /* Debug */,
+				DC12F5B31FD7A43100A3839F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCA446251FD108D0009A3B22 /* Build configuration list for PBXProject "Advent2017" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

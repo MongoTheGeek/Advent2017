@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Security
 
 extension Character {
     var string: String { return String(self) }
@@ -53,19 +54,43 @@ extension String {
     subscript(partialRange: PartialRangeThrough<Int>) -> Substring {
         return self[startIndex.encodedOffset...partialRange.upperBound]
     }
+
+    func md5() -> String! {
+        let str = self.cString(using: String.Encoding.utf8)
+        let strLen = CUnsignedInt(self.lengthOfBytes(using: String.Encoding.utf8))
+        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+        CC_MD5(str!, strLen, result)
+        var hash = NSMutableString()
+        for i in 0..<digestLen {
+            hash.appendFormat("%02x", result[i])
+        }
+        result.deinitialize()
+        return String(format: hash as String)
+    }
+    
+    func toMD5()  -> String {
+        
+        if let messageData = self.data(using:String.Encoding.utf8) {
+            var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
+            
+            _ = digestData.withUnsafeMutableBytes {digestBytes in
+                messageData.withUnsafeBytes {messageBytes in
+                    CC_MD5(messageBytes, CC_LONG((messageData.count)), digestBytes)
+                }
+            }
+            return digestData.hexString()
+        }
+        
+        return self
+    }
 }
 
-//func MD5(string: String) -> Data {
-//    let messageData = string.data(using:.utf8)!
-//    var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
-//
-//    _ = digestData.withUnsafeMutableBytes {digestBytes in
-//        messageData.withUnsafeBytes {messageBytes in
-//            CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
-//        }
-//    }
-//
-//    return digestData
-//}
-//
-
+extension Data {
+    
+    func hexString() -> String {
+        let string = self.map{ String($0, radix:16) }.joined()
+        return string
+    }
+    
+}
